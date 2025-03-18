@@ -1,5 +1,5 @@
 # Pharmacy_Object_Detection_Using_YOLO
-Sure! Here's a more detailed and elaborated version of the code explanation that you can use for a GitHub README file:
+
 
 ---
 
@@ -82,6 +82,7 @@ from google.colab.patches import cv2_imshow
 img = cv2.imread(r"/content/drive/MyDrive/DS Project/22. Par Inventory Train/datasets/test/images/frame_0001_jpg.rf.94df2a1c04de8cc4c8aff4803c0a2e01.jpg")
 cv2_imshow(img)  # Displays the image in Colab
 ```
+![image](https://github.com/user-attachments/assets/89369f3a-c218-4fe3-a103-76754d56e2d0)
 
 ### Step 7: Make Predictions with the YOLOv5 Model
 
@@ -143,6 +144,7 @@ for each_box, each_class, each_conf in zip(boxes, classes, confidences):
 
 cv2_imshow(img_filtered)
 ```
+![Screenshot 2025-03-18 155946](https://github.com/user-attachments/assets/8daaca54-c9d1-438c-bff4-94f9c2bfd642)
 
 ### Step 11: Apply Class-Wise NMS
 
@@ -207,6 +209,7 @@ for each_box, each_class, each_conf in zip(nms_boxes, nms_classes, nms_confidenc
 
 cv2_imshow(img_final)
 ```
+![Screenshot 2025-03-18 155931](https://github.com/user-attachments/assets/f71c4283-b14c-457f-b5ee-10b79139ca72)
 
 ---
 
@@ -214,6 +217,4 @@ cv2_imshow(img_final)
 
 This repository provides a step-by-step guide to training a YOLOv5 model on a custom dataset and making predictions with confidence filtering and Non-Maximum Suppression. The post-processing ensures accurate and non-overlapping object detections, making the workflow suitable for real-time object detection tasks.
 
----
 
-You can customize this README further with specific details about the project, such as the dataset used, performance metrics, or links to references for better understanding.
